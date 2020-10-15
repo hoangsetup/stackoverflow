@@ -11,9 +11,15 @@ const arr = [
     position: 2,
     id: 222,
   },
+  {
+    value: 1000,
+    position: 1000,
+    id: 222,
+  },
 ];
 
 const result = _.maxBy(arr, (i) => {
-  return i.value - i.position;
+  const dup = _.filter(arr, (o) => o.value === i.value).length;
+  return i.value - dup ? i.position : 0;
 });
 console.log(result);
