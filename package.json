@@ -12,6 +12,7 @@
   "devDependencies": {
     "date-fns": "^2.16.1",
     "jest": "^26.5.2",
+    "lodash": "^4.17.20",
     "mysql2": "^2.2.5",
     "sinon": "^9.2.0"
   }
