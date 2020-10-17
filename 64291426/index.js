@@ -9,3 +9,17 @@ function randomNum() {
   }
 }
 randomNum();
+
+async function randomNum2() {
+  for (let i = 1; i <= 10; i++) {
+    let time = Math.random() * 100;
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        console.log(i, time);
+        resolve();
+      }, time);
+    })
+  }
+}
+
+randomNum2();
