@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest 64375625/index.spec.js"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "lodash": "^4.17.20",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.6",
-    "sinon": "^9.2.0"
+    "sinon": "^9.2.0",
+    "supertest": "^6.0.0"
   }
 }
