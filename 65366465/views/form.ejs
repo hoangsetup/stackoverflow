@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <label for="imgURL">Image URL</label>
+    <% const imgURLError = getInputError('imgURL'); %>
+      <input type="text" class="form-control <%= imgURLError ? 'is-invalid' : '' %>" id="imgURL" required>
+      <% if (imgURLError) { %> 
+      <div class="invalid-feedback">
+        <%= imgURLError.msg %> 
+      </div>
+      <% } %>
+  </div>
+  <div>
+    <label for="username">Username</label>
+    <% const usernameError = getInputError('username'); %>
+      <input type="text" class="form-control <%= usernameError ? 'is-invalid' : '' %>" id="username" required>
+      <% if (usernameError) { %> 
+      <div class="invalid-feedback">
+        <%= usernameError.msg %> 
+      </div>
+      <% } %>
+  </div>
+</body>
+
+</html>
