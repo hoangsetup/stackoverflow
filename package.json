@@ -26,6 +26,8 @@
     "sinon": "^9.2.0",
     "supertest": "^6.0.0",
     "ts-jest": "^26.4.4",
-    "typescript": "^4.0.5"
-  }
+    "typescript": "^4.0.5",
+    "winston": "^3.3.3"
+  },
+  "dependencies": {}
 }
