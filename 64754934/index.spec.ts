@@ -15,4 +15,15 @@ describe(`API Calls`, () => {
     // expect(api.fetch).toBeCalledTimes(1)
     expect(response).toEqual({name: 'hoang1'});
   })
+
+  test.only('Once', async () => {
+    const mock = jest.fn()
+      .mockReturnValueOnce(0)
+      .mockReturnValueOnce(5)
+
+    const init = await mock();
+    const result = await mock();
+    expect(init).toEqual(0);
+    expect(result).toEqual(5);
+  })
 })
