@@ -1,3 +1,9 @@
+Use `username` instead of `user` to find a user
+```
+Company.findOne({ username: req.body.user });
+```
+
+
 You are mixing `callback` style with `async/await`, `await` keyword does not affect on your, it will not wait until the query finished. `await` keyword just working when you wait for a `Promise like object` (`then` able object).
 
 I guess you are using `mongoose`, the current version of `mongoose` supports Promise return style.
@@ -7,7 +13,9 @@ module.exports.create_user = async function (req, res) {
   // console.log(req.body);
   // console.log(req.user);
   try {
-    const user = await Company.findOne({ user: req.body.user }); // callback is not passed, it will return a Promise
+    // Use `username` instead of `user` to find a user
+    const user = await Company.findOne({ username: req.body.user }); // callback is not passed, it will return a Promise
+
     if (user) {
       return res.redirect('/login');
     }
