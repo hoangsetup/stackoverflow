@@ -26,6 +26,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.20",
     "mysql2": "^2.2.5",
+    "node-ratify": "^1.1.32",
     "nodemon": "^2.0.6",
     "rewire": "^5.0.0",
     "shelljs": "^0.8.4",
