@@ -21,6 +21,9 @@ describe(`API Calls`, () => {
       .mockReturnValueOnce(0)
       .mockReturnValueOnce(5)
 
+    const a = new (jest.fn() as any);
+    console.log(a);
+
     const init = await mock();
     const result = await mock();
     expect(init).toEqual(0);
