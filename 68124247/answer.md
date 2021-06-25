@@ -5,10 +5,12 @@ Just listen to `end` event of `stdout` then return the data. You need to wrap it
     return new Promise((resolve) => {
       let data = '';
 
-      let chunk = '';
-      while (chunk = this._child.stdout.read()) {
-        data += chunk;
-      }
+      this._child.stdout.on('readable', () => {
+        let chunk = '';
+        while (chunk = this._child.stdout.read()) {
+          data += chunk;
+        }
+      });
 
       this._child.stdout.on('end', () => {
         resolve(data); // return data
