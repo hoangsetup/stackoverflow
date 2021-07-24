@@ -1,0 +1,11 @@
+
+@url = http://localhost:3000
+
+##
+POST {{url}}/check
+content-type: application/json
+
+{
+  "isAnonymous": false,
+  "displayName": "Addd"
+}
