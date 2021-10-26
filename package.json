@@ -42,5 +42,9 @@
     "ts-jest": "^26.4.4",
     "typescript": "^4.0.5",
     "winston": "^3.3.3"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "upng-js": "^2.1.0"
   }
 }
