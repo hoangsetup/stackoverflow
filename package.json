@@ -35,6 +35,8 @@
     "node-ratify": "^1.1.32",
     "nodemon": "^2.0.6",
     "rewire": "^3.0.2",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-offline": "^13.8.1",
     "shelljs": "^0.8.4",
     "sinon": "^9.2.0",
     "stripe": "^8.137.0",
@@ -45,6 +47,7 @@
   },
   "dependencies": {
     "jsqr": "^1.4.0",
+    "serverless": "^3.39.0",
     "upng-js": "^2.1.0"
   }
 }
