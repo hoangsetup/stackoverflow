@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@aws-sdk/client-dynamodb": "^3.775.0",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@types/express": "^4.17.11",
